@@ -1,0 +1,16 @@
+<h1>Oh snap <%= @order_name %>! I also like to <%= @activity %>.  </h1>
+<h2>Who do you feel like hanging out with?</h2>
+
+  <form action='/venues' method='get'> 
+      <input name='friends' type='radio' value='my roomate'> my roomate <br>  
+      <input name='friends' type='radio' value='my boss'> my boss <br>  
+      <input name='friends' type='radio' value='nobody'> nobody <br>
+      <input name='friends' type='radio' value='Jack Nicholson'> Jack Nicholson <br><br>
+      
+      <input name = 'order_names' type= 'hidden' value='<%= @order_name %>'>
+      <input name = 'activities' type= 'hidden' value='<%= @activity %>'>
+         <input type='submit' value="Let's hang out!">
+  </form>
+
+
+

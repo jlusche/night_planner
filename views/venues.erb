@@ -1,0 +1,16 @@
+<h1>You want to <%= @activity %> with <%= @friend %>? Great choice.  </h1>
+<h2>Where do you want to go down?</h2>
+	
+  <form action='/orders' method='get'> 
+      <input name='venues' type='radio' value='at home'> at home <br>  
+      <input name='venues' type='radio' value='at a bar'> at a bar <br>  
+      <input name='venues' type='radio' value='on a beach'> on a beach <br>
+      <input name='venues' type='radio' value='Jack in your bed'> in your bed <br><br>
+
+            <input name = 'order_names' type= 'hidden' value='<%= @order_name %>'>
+      <input name = 'activities' type= 'hidden' value='<%= @activity %>'>
+      <input name = 'friends' type= 'hidden' value='<%= @friend %>'>
+      
+         <input type='submit' value="Let's do it!">
+  </form>
+
